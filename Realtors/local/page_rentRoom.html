@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/swiper-10.3.1/swiper-bundle.min.css">
+    <script src="./assets/swiper-10.3.1/swiper-bundle.min.js"></script>
+   
+    <script src="./assets/js/index.js"></script>
+    <title>Rent room</title>
+</head>
+<body>
+    <div class="call_manager manage_fixed" onclick="showModal()"></div>
+    <header class="head">
+        <div class="container">
+                <nav class="head__menu">
+                    <ul class="menu__ul">
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Услуги
+                            <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                          
+                        </li>
+                        <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Собственникам
+                              <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                            
+                          </li>
+                          <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />О компании
+                              <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                            
+                          </li>
+                          <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Блог
+                              <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                            
+                          </li>
+                          <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Контакты
+                              <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                            
+                          </li>
+            
+                    </ul>
+                </nav>
+
+                    <div class="head__logo"></div>
+             
+                <div class="head__information">
+                        <div class="head__information-address">
+                            <svg class="svg__address" xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" fill="none">
+                                <path d="M1.47794 5.86607C2.5545 3.022 5.30049 1 8.52039 1C12.677 1 16.0465 4.37056 16.0465 8.52679C16.0465 11.8636 11.1949 18.2478 9.28213 20.6348C9.19053 20.7488 9.07453 20.8408 8.94267 20.904C8.8108 20.9672 8.66644 21 8.52022 21C8.37399 21 8.22963 20.9672 8.09777 20.904C7.96591 20.8408 7.8499 20.7488 7.7583 20.6348C5.88428 18.2964 1.18976 12.1215 1 8.73374" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M5.06934 8.52412C5.07538 7.61499 5.44096 6.74519 6.08623 6.10474" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M7.25733 5.33782C7.88375 5.09165 8.56846 5.03397 9.22723 5.17187C9.88601 5.30976 10.4901 5.63722 10.9652 6.11396C11.4403 6.5907 11.7657 7.19592 11.9013 7.85517C12.0369 8.51441 11.9768 9.19892 11.7285 9.82448C11.4802 10.45 11.0544 10.9894 10.5035 11.3761C9.95269 11.7628 9.30081 11.9801 8.62809 12.0012C7.95537 12.0223 7.29116 11.8462 6.71718 11.4948C6.1432 11.1433 5.68448 10.6317 5.39746 10.0229" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+                            <p>Агентство элитной недвижимости                                 Москва, Мира 23</p>
+                        </div>
+                        <div class="head__information-phone">
+                            <p>+7 (495) 790-82-78 </p>
+                            <svg class="svg__phone" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2178 13.9244C11.4978 16.44 13.56 18.5022 16.0756 19.7822L18.0311 17.8267C18.28 17.5778 18.6267 17.5067 18.9378 17.6044C19.9333 17.9333 21 18.1111 22.1111 18.1111C22.3469 18.1111 22.573 18.2048 22.7397 18.3715C22.9064 18.5382 23 18.7643 23 19V22.1111C23 22.3469 22.9064 22.573 22.7397 22.7397C22.573 22.9064 22.3469 23 22.1111 23C18.1034 23 14.2598 21.4079 11.4259 18.5741C8.59206 15.7402 7 11.8966 7 7.88889C7 7.65314 7.09365 7.42705 7.26035 7.26035C7.42705 7.09365 7.65314 7 7.88889 7H11C11.2357 7 11.4618 7.09365 11.6285 7.26035C11.7952 7.42705 11.8889 7.65314 11.8889 7.88889C11.8889 9 12.0667 10.0667 12.3956 11.0622C12.4933 11.3733 12.4222 11.72 12.1733 11.9689L10.2178 13.9244Z" fill="#DBC67F"/>
+                                <circle cx="15" cy="15" r="14.5" stroke="#DBC67F"/>
+                                </svg>
+                                
+                        </div>
+                </div>
+            </div>
+        </div> 
+    </header>
+
+    <section class="section__face" id="section__face">
+        <div class="swiper sample-slider">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide ">
+                    <div class="sell_face-left-content rentRoom-slider">
+                        <p>
+                            <a href="!#"> Главная</a> / <a href="#!"> Каталог</a>
+                        </p>
+                        <h1>Аренда <span class="goldColor">Квартир</span>
+                        </h1>
+                        <p  class="mt-3rem rentRoom_night">
+                            от <span class="goldColor">2000р/</span>ночь
+                        </p>
+                        <button class="slider__btn-buy sell_face_btn" onclick="showModal()">Получить консультацию</button>
+                    </div>
+                       
+                        <div class="slider__right-img">
+                           <div class="slider__contacts">
+                            <img class="slider__contact" src="./assets/img/whatsapp.svg.png" alt="whatsapp" />
+                            <img class="slider__contact" src="./assets/img/telegram.svg.png" alt="telegram" />
+                            <img class="slider__contact" src="./assets/img/youtube.svg.png" alt="youtube" />
+                           </div>
+                           
+                        </div>
+                </div>
+                <div class=" swiper-slide ">
+                    <div class="sell_face-left-content rentRoom-slider">
+                        <p>
+                            <a href="!#"> Главная</a> / <a href="#!"> Каталог</a>
+                        </p>
+                        <h1>Аренда <span class="goldColor">Квартир</span>
+                        </h1>
+                        <p  class="mt-3rem rentRoom_night">
+                            от <span class="goldColor">2000р/</span>ночь
+                        </p>
+                        <button class="slider__btn-buy sell_face_btn">Получить консультацию</button>
+                    </div>
+                       
+                        <div class="slider__right-img">
+                           <div class="slider__contacts">
+                            <img class="slider__contact" src="./assets/img/whatsapp.svg.png" alt="whatsapp" />
+                            <img class="slider__contact" src="./assets/img/telegram.svg.png" alt="telegram" />
+                            <img class="slider__contact" src="./assets/img/youtube.svg.png" alt="youtube" />
+                           </div>
+                           
+                        </div>
+                </div>
+            </div>
+             
+            <div class="swiper-pagination"></div>
+
+        </div>
+        <div class="under__slider">
+            <img class=" under__slider-right" src="./assets/img/Corners/corner_left_softWhite.png" />
+            <img class="under__slider-left" src="./assets/img/Corners/corner_right_softWhite.png" />
+        </div>
+    </section>
+    <section class="mb-0 best__offers ">
+        <div class=" mb-7rem container-rentRoom">
+            <div class="form_order">
+                <form class="form">
+                   <div class="form__content">
+                    <div class="chid">
+                        <label for="select">Тип  объекта: </label>
+                        <div class="multiselect_block" >
+                            <label for="select-1" class="field_multiselect">Выбор</label>
+                            <input id="checkbox-1" class="multiselect_checkbox" type="checkbox">
+                            <label for="checkbox-1" class="multiselect_label"></label>
+                            <select id="select-1" class="field_select" name="technology" multiple style="@media (min-width: 768px) { height: calc(4 * 38px)}">
+                                <option value="Room">Room</option>
+                                <option value="Bed">bed</option>
+                                <option value="Commercial">commercial</option>
+                                <option value="Land">Land</option>
+                            </select>
+                        </div> 
+                    </div>
+                        <div class="chid">
+                            <label for="price">Цена </label>
+                            <div class="price" id="price">
+                                <input type="text" name="from_price" placeholder="от"/>
+                                <input type="text" name="to_price" placeholder="до"/>
+                            </div>
+                        </div>
+                        <div class="chid">
+                            <label for="price">Площадь </label>
+                            <div class="price" id="price">
+                                <input type="text" name="from_price" placeholder="от"/>
+                                <input type="text" name="to_price" placeholder="до"/>
+                            </div>
+                        </div>
+                        <div class="chid">
+                            <label for="room">Комнат </label>
+                            <div class="room" id="room">
+                                <div class="wrapper_checkbox">
+                                    <input  type="radio" name="room-1" value="1"/>
+                                    <span>1</span>
+                                  
+                                </div>
+                                <div class="wrapper_checkbox">
+                                    <input  type="radio" name="room-1" value="1"/>
+                                    <span>2</span>
+                                    <div class="line-gray"></div>
+                                </div>
+                                <div class="wrapper_checkbox">
+                                    <input  type="radio" name="room-1" value="1"/>
+                                    <span>3</span>
+                                    <div class="line-gray"></div>
+                                </div>
+                                <div class="wrapper_checkbox">
+                                    <input  type="radio" name="room-1" value="1"/>
+                                    <span>4+</span>
+                                    <div class="line-gray"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                   </div>
+                   <div class="form__content">
+                    <div class="chid">
+                        <label for="bed">Спальни </label>
+                        <div class="room" id="bed">
+                            <div class="wrapper_checkbox">
+                                <input  type="radio" name="bed-1" value="1"/>
+                                <span>1</span>
+                           
+                            </div>
+                            <div class="wrapper_checkbox">
+                                <input  type="radio" name="bed-1" value="1"/>
+                                <span>2</span>
+                                <div class="line-gray"></div>
+                            </div>
+                            <div class="wrapper_checkbox">
+                                <input  type="radio" name="bed-1" value="1"/>
+                                <span>3</span>
+                                <div class="line-gray"></div>
+                            </div>
+                            <div class="wrapper_checkbox">
+                                <input  type="radio" name="bed-1" value="1"/>
+                                <span>4+</span>
+                                <div class="line-gray"></div>
+                            </div>
+                         
+                            
+                        </div>
+                    </div>
+                    <div class="chid">
+                        <label for="repair">Ремонт </label>
+                        <div class="wrapper__select-form_repair">
+                            <select class="repair" id="repair"> 
+                                <option>Все</option> 
+                                <option>Apples</option> 
+                                <option>Bananas</option> 
+                                <option>Grapes</option> 
+                                <option>Oranges</option> 
+                            </select>
+                        </div>
+                    </div>
+                    <div class="chid">
+                        <label for="select-2">Характеристики: </label> 
+                        <div class="multiselect_block_character">
+                            <label for="select-2" class="field_multiselect_character">Выбор</label>
+                            <input id="checkbox-2" class="multiselect_checkbox_character" type="checkbox">
+                            <label for="checkbox-2" class="multiselect_label_character"></label>
+                            <select id="select-2" class="field_select_character" name="technology" multiple style="@media (min-width: 768px) { height: calc(4 * 38px)}">
+                                <option value="Room">Room</option>
+                                <option value="Bed">bed</option>
+                                <option value="Commercial">commercial</option>
+                                <option value="Land">Land</option>
+                            </select>
+                        </div> 
+                    </div>
+                    <div class="chid">
+                        <button class="w-100per mt-1rem slider__btn-buy rentRoomFontBtn " type="submit">Подобрать</button>
+                    </div>
+                   </div>
+                </form>
+            </div>
+        </div>
+        
+        
+        <div class="under__slider">
+            <img class=" under__slider-right" src="./assets/img/Corners/angle_section4.png" />
+            <img class="under__slider-left" src="./assets/img/Corners/angle_section4_left.png" />
+            
+        </div> 
+    </section>
+    <section class="back__veryBrightMarble catalog">
+       <div class="container-catalog">
+            <div class="catalog-sort">
+                <p>Сортировать по: <div class="select-wrapper">
+                    <select>
+                        <option value="-1">Убыванию цены</option>
+                        <option value="1">Возростанию цены</option>
+                    </select>
+                </div></p>
+            </div>
+            <div class="catalog__content" id="catalog__content">
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/482fd012dcb320eabb7cc808819e9e0f.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/1.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/2.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="btn-text-black ofc__button ">Смотреть все</button>
+       </div>
+       <div class="under__slider">
+        <img class=" under__slider-right" src="./assets/img/Corners/corner_left_softWhite.png" />
+        <img class="under__slider-left" src="./assets/img/Corners/corner_right_softWhite.png" />
+    </div>
+    </section>
+    <section class="mb-0 best__offers ">
+        <div class="base_mt offers__text">
+            <div class="our__serviec-intro offers__align-center">
+                <img class="servieces__intro-leftImg" src="./assets/img/our_services.png" alt="our__services" />
+
+                <h1 class="our__services-name offers__name">Лучшее предложение
+                <br> на <span>продажу недвижимости</span></h1>
+                <img class= "servieces__intro-rightImg" src="./assets/img/our_services.png" alt="our__services" /><br>
+            </div>
+            <p>Сдаем в аренду квартиры, апартаменты дома и земельные участки
+                в элитных районах Москвы</p>
+        </div>
+        <div class="mb-5rem swiper swiper-room">
+                
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/482fd012dcb320eabb7cc808819e9e0f.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/2.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/1.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/2.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/2.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/2.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/2.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/2.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offers__card">
+                    <div class="offers__card-img">
+                        <img src="./assets/img/card/2.png" alt="offers_room" />                   
+                    </div>
+                    <div class="offers__card-content">
+                        <h3>Студия у метро Нарвская</h3>
+                        <p>улица Калинина, 10</p>
+                        <div class="ofc__icons">
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/icon_size.png.png" alt="icon" />
+                                <p>Площадь (м2)</p>
+                                <p>30</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/floor.png" alt="icon" />
+                                <p>Этаж</p>
+                                <p>2</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/bed.png" alt="icon" />
+                                <p>Вместимость</p>
+                                <p>3</p>
+                            </div>
+                            <div class="ofc__icons-content">
+                                <img src="./assets/img/card/icons/sunset.png" alt="icon" />
+                                <p>Bug</p>
+                                <p>На реку</p>
+                            </div>
+                        </div>
+                        <p class="ofc__price">от 2000 ₽/ночь</p>
+                        <button class="ofc__button">Подробнее</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="swiper-pagination"></div>
+          
+ 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="under__slider">
+            <img class=" under__slider-right" src="./assets/img/Corners/angle_section4.png" />
+            <img class="under__slider-left" src="./assets/img/Corners/angle_section4_left.png" />
+            
+        </div>
+    </section>
+    <section class="info back__veryBrightMarble best__offers">
+        <div class="info-content">
+            <div class="info-content-card frist">
+                <div class="info__wrapper-content-frist">
+                    <img src="./assets/img/page_rentRoom/renter.png" alt="room" />
+                    <div class="info-rectangle-border info-rect1">
+                        
+                    </div>
+                </div>
+                <div class="info-content-frist-text">
+                    <h1> Арендаторам <br>
+                    <img class="info-img_under_h1" src="./assets/img/our_services.png" alt="vector" />
+                    </h1>
+                    <div class="info__wrapper-content-frist">
+                        
+                        <p class="info-content-first-paragraph">
+                            <svg class="border__paragraph" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect  x="0" y="0" width="100%" height="100%" rx="9.5" stroke="url(#paint0_linear_7_956)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_7_956" x1="0" y1="0" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#DBC67F"/>
+                                <stop offset="1" stop-color="#DBC67F" stop-opacity="0"/>
+                                </linearGradient>
+                                
+                                </defs>
+                                
+                            </svg>
+                            Мечтаете снять квартиру в центре столицы или в других престижных районах Москвы?
+                            Intermark Real Estate (ранее Savills) всегда рядом и будет рад помочь Вам на всех этапах выбора квартиры и заключения сделки.
+                            <br><br>
+                            - Наши менеджеры в самые короткие сроки представят Вашему вниманию все наиболее интересные объекты, доступные в данный момент на московском рынке и максимально соответствующие Вашему запросу;
+   
+                        </p>
+                        <button class="readContinue">Читать далее...</button>
+                    </div>
+                </div>
+            </div >
+            <div class="info-content-card second">
+                <div class="info__wrapper-content-frist">
+                    <img src="./assets/img/page_rentRoom/self.png" alt="room" />
+                    <div class="info-rectangle-border info-rect1">
+                        
+                    </div>
+                </div>
+                <div class="info-content-frist-text second-text">
+                    <h1> Крупнейшая база<br>
+                    <img class="info-img_under_h1" src="./assets/img/our_services.png" alt="vector" />
+                    </h1>
+                    <div class="info__wrapper-content-frist">
+                        <p class="info-content-first-paragraph">
+                            <svg class="border__paragraph" width="100%" height="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect  x="0" y="0" width="100%" height="100%" rx="9.5" stroke="url(#paint0_linear_7_956)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_7_956" x1="0" y1="0" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#DBC67F"/>
+                                <stop offset="1" stop-color="#DBC67F" stop-opacity="0"/>
+                                </linearGradient>
+                                
+                                </defs>
+                                
+                            </svg>
+                            Мы гордимся тем, что уже давно нам нет равных в сфере аренды элитной недвижимости в Москве. Вам достаточно просто позвонить нам и Ваша квартира очень быстро обретет достойного арендатора. Мы отлично знаем все тонкости непростого процесса сдачи недвижимости в аренду и организуем его наиболее быстрым, эффективным и профессиональным способом.
+                            <br><br>
+                            - Мы проконсультируем Вас по всем вопросам подготовки объекта к сдаче, обеспечим профессиональное маркетинговое продвижение и организуем показы;
+
+                        </p>
+                        <button class="readContinue">Читать далее...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="under__slider choose_under">
+            <img class="under__slider-left" src="./assets/img/Corners/black_angle_under_page_left.png" />
+            <img class=" under__slider-right" src="./assets/img/Corners/black_angle_under_page.png" />
+        </div>  
+    </section>
+    <footer class="footer">
+        <div class="head__logo footer-logo"></div>
+        <div class="footer-content">
+            <div class="footer-content-first">
+                <h1>Главная</h1>
+                <ul class="menu__ul">
+                    <li>
+                        <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Услуги
+                      </li>
+                      <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Собственникам
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />О компании
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Блог
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Контакты
+                        </li>
+                </ul>
+            </div>
+            <div class="footer-content-first">
+                <h1>Аренда</h1>
+                <ul class="menu__ul">
+                    <li>
+                        <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Квартиры
+                      </li>
+                      <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Дома
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Коммерческая<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; недвижимость
+                        </li>
+                </ul>
+            </div>
+            <div class="footer-content-first">
+                <h1>Продажа</h1>
+                <ul class="menu__ul">
+                    <li>
+                        <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Квартиры
+                      </li>
+                      <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Дома
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Коммерческая<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; недвижимость
+                        </li>
+                        <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Земельные участки
+                        </li>
+                </ul>
+            </div>
+            <div class="footer-content-first">
+                <h1 class="footer__name">Контактные данные</h1>
+                <p class="footer_phone">+7 800 123-00-00</p>
+                <div class="footer__contacts">
+                    <img class="slider__contact" src="./assets/img/whatsapp.svg.png" alt="whatsapp" />
+                        <img class="slider__contact" src="./assets/img/telegram.svg.png" alt="telegram" />
+                        <img class="slider__contact" src="./assets/img/youtube.svg.png" alt="youtube" />
+                </div>
+                <div class="head__information-address footer__address">
+                    <svg class="svg__address" xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" fill="none">
+                        <path d="M1.47794 5.86607C2.5545 3.022 5.30049 1 8.52039 1C12.677 1 16.0465 4.37056 16.0465 8.52679C16.0465 11.8636 11.1949 18.2478 9.28213 20.6348C9.19053 20.7488 9.07453 20.8408 8.94267 20.904C8.8108 20.9672 8.66644 21 8.52022 21C8.37399 21 8.22963 20.9672 8.09777 20.904C7.96591 20.8408 7.8499 20.7488 7.7583 20.6348C5.88428 18.2964 1.18976 12.1215 1 8.73374" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M5.06934 8.52412C5.07538 7.61499 5.44096 6.74519 6.08623 6.10474" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M7.25733 5.33782C7.88375 5.09165 8.56846 5.03397 9.22723 5.17187C9.88601 5.30976 10.4901 5.63722 10.9652 6.11396C11.4403 6.5907 11.7657 7.19592 11.9013 7.85517C12.0369 8.51441 11.9768 9.19892 11.7285 9.82448C11.4802 10.45 11.0544 10.9894 10.5035 11.3761C9.95269 11.7628 9.30081 11.9801 8.62809 12.0012C7.95537 12.0223 7.29116 11.8462 6.71718 11.4948C6.1432 11.1433 5.68448 10.6317 5.39746 10.0229" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                    <p>Агентство элитной недвижимости                                 Москва, Мира 23</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <a>Соглашение об использовании персональных данных</a>
+            <a>© 2023 Все права защищены</a>
+        </div>
+    </footer>
+    <div class="block_modal" id="modal">
+        <div class="border" id="modal_border">
+            <div class="modal_X" id="modal_close" onclick="showModal()"> </div>
+            <div class="modal-content">
+                <div class="modal_name">
+                    <h1>продать/сдать</h1>
+                    <h1>недвижимость</h1>
+                    <img class="services_svg" src="./assets/img/svg_ourServices.png" alt="vector" />
+                </div>
+                <p>Оставьте заявку и наши менеджеры свяжутся с вами в ближайшее время</p>
+                <form class="modal_form" name="form_call">
+                    <input class="modal_form_input_withImg " type="text" name="name" placeholder="Ваше имя" required/>
+                    <input class="ml-auto call_input input_phone" type="tel" name="phone" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _" pattern="+7[0-9]{3}[0-9]{3}[0-9]{4}" required/>
+                    <div class="modal_wrapper_icon_input">
+                        <div class="modal_wrapper__select-form_typeObject">
+                            <select class="modal_typeObject" id="modal_typeObject"> 
+                                <option>Тип услуги</option> 
+                                <option>Дом</option> 
+                                <option>Квартира</option> 
+                                <option>Подвал</option> 
+                                <option>Клетка</option> 
+                            </select>
+                        </div>
+                     </div>
+                    <div class="modal_wrapper_icon_input">
+                        <div class="modal_wrapper__select-form_typeObject">
+                            <select class="modal_typeObject" id="modal_typeObject"> 
+                                <option>Тип объекта</option> 
+                                <option>Дом</option> 
+                                <option>Квартира</option> 
+                                <option>Подвал</option> 
+                                <option>Клетка</option> 
+                            </select>
+                        </div>
+                     </div>
+                     <input class="modal_input" type="text" name="name" placeholder="Введите адрес" required/>
+                     <div class="modal_form_blocks_inputs">
+                        <input class="modal_input" type="text" name="name" placeholder="Площадь" required/>
+                        <input class="modal_input" type="text" name="name" placeholder="Кол. комнат" required/>
+                     </div>
+                     <div class="modal_form_personalInfo">
+                        <input type="checkbox" class="checkbox-round" required/>
+                        <p>Принимаю <u>условия обработки</u> персональных данных</p>
+                     </div>
+                    <div class="modal_form_block_btn">
+                        <button class="modal_form_btn">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal_X" id="modal_close_bottom" onclick="showModal()"> </div>
+        </div>
+        
+    </div>
+
+    <div class="burger">
+        <span></span>
+    </div>
+    <div class="menu">
+        <div class="head__logo"></div>
+        <nav class="head__menu">
+            <ul class="menu__ul">
+                <li>
+                  <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Услуги
+                    <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                  
+                </li>
+                <li>
+                    <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Собственникам
+                      <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                    
+                  </li>
+                  <li>
+                    <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />О компании
+                      <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                    
+                  </li>
+                  <li>
+                    <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Блог
+                      <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                    
+                  </li>
+                  <li>
+                    <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Контакты
+                      <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                    
+                  </li>
+    
+            </ul>
+        </nav>
+        <div class="head__information">
+            <div class="head__information-address">
+                <svg class="svg__address" xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" fill="none">
+                    <path d="M1.47794 5.86607C2.5545 3.022 5.30049 1 8.52039 1C12.677 1 16.0465 4.37056 16.0465 8.52679C16.0465 11.8636 11.1949 18.2478 9.28213 20.6348C9.19053 20.7488 9.07453 20.8408 8.94267 20.904C8.8108 20.9672 8.66644 21 8.52022 21C8.37399 21 8.22963 20.9672 8.09777 20.904C7.96591 20.8408 7.8499 20.7488 7.7583 20.6348C5.88428 18.2964 1.18976 12.1215 1 8.73374" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M5.06934 8.52412C5.07538 7.61499 5.44096 6.74519 6.08623 6.10474" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M7.25733 5.33782C7.88375 5.09165 8.56846 5.03397 9.22723 5.17187C9.88601 5.30976 10.4901 5.63722 10.9652 6.11396C11.4403 6.5907 11.7657 7.19592 11.9013 7.85517C12.0369 8.51441 11.9768 9.19892 11.7285 9.82448C11.4802 10.45 11.0544 10.9894 10.5035 11.3761C9.95269 11.7628 9.30081 11.9801 8.62809 12.0012C7.95537 12.0223 7.29116 11.8462 6.71718 11.4948C6.1432 11.1433 5.68448 10.6317 5.39746 10.0229" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                </svg>
+                <p>Агентство элитной недвижимости                                 Москва, Мира 23</p>
+            </div>
+            <div class="head__information-phone">
+                <p>+7 (495) 790-82-78 </p>
+                <svg class="svg__phone" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2178 13.9244C11.4978 16.44 13.56 18.5022 16.0756 19.7822L18.0311 17.8267C18.28 17.5778 18.6267 17.5067 18.9378 17.6044C19.9333 17.9333 21 18.1111 22.1111 18.1111C22.3469 18.1111 22.573 18.2048 22.7397 18.3715C22.9064 18.5382 23 18.7643 23 19V22.1111C23 22.3469 22.9064 22.573 22.7397 22.7397C22.573 22.9064 22.3469 23 22.1111 23C18.1034 23 14.2598 21.4079 11.4259 18.5741C8.59206 15.7402 7 11.8966 7 7.88889C7 7.65314 7.09365 7.42705 7.26035 7.26035C7.42705 7.09365 7.65314 7 7.88889 7H11C11.2357 7 11.4618 7.09365 11.6285 7.26035C11.7952 7.42705 11.8889 7.65314 11.8889 7.88889C11.8889 9 12.0667 10.0667 12.3956 11.0622C12.4933 11.3733 12.4222 11.72 12.1733 11.9689L10.2178 13.9244Z" fill="#DBC67F"/>
+                    <circle cx="15" cy="15" r="14.5" stroke="#DBC67F"/>
+                </svg>
+                    
+        </div>
+        </div>
+       
+    </div>
+</body>
+</html>

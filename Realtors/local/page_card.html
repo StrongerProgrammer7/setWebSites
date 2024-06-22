@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/swiper-10.3.1/swiper-bundle.min.css">
+    
+    <script src="./assets/swiper-10.3.1/swiper-bundle.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A053bd947d462cc1a45aeba4070defff75501905071c0eaf68436ac9976ec698c&amp;id=mymap&amp;lang=ru_RU&amp;"></script>
+    <script src="./assets/js/index.js"></script>
+    <title>Card building</title>
+</head>
+<body>
+    <div class="call_manager manage_fixed" onclick="showModal()"></div>
+    <header class="head">
+        <div class="container">
+                <nav class="head__menu">
+                    <ul class="menu__ul">
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Услуги
+                            <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                          
+                        </li>
+                        <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Собственникам
+                              <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                            
+                          </li>
+                          <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />О компании
+                              <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                            
+                          </li>
+                          <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Блог
+                              <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                            
+                          </li>
+                          <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Контакты
+                              <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                            
+                          </li>
+            
+                    </ul>
+                </nav>
+
+                    <div class="head__logo"></div>
+             
+                <div class="head__information">
+                        <div class="head__information-address">
+                            <svg class="svg__address" xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" fill="none">
+                                <path d="M1.47794 5.86607C2.5545 3.022 5.30049 1 8.52039 1C12.677 1 16.0465 4.37056 16.0465 8.52679C16.0465 11.8636 11.1949 18.2478 9.28213 20.6348C9.19053 20.7488 9.07453 20.8408 8.94267 20.904C8.8108 20.9672 8.66644 21 8.52022 21C8.37399 21 8.22963 20.9672 8.09777 20.904C7.96591 20.8408 7.8499 20.7488 7.7583 20.6348C5.88428 18.2964 1.18976 12.1215 1 8.73374" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M5.06934 8.52412C5.07538 7.61499 5.44096 6.74519 6.08623 6.10474" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M7.25733 5.33782C7.88375 5.09165 8.56846 5.03397 9.22723 5.17187C9.88601 5.30976 10.4901 5.63722 10.9652 6.11396C11.4403 6.5907 11.7657 7.19592 11.9013 7.85517C12.0369 8.51441 11.9768 9.19892 11.7285 9.82448C11.4802 10.45 11.0544 10.9894 10.5035 11.3761C9.95269 11.7628 9.30081 11.9801 8.62809 12.0012C7.95537 12.0223 7.29116 11.8462 6.71718 11.4948C6.1432 11.1433 5.68448 10.6317 5.39746 10.0229" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+                            <p>Агентство элитной недвижимости                                 Москва, Мира 23</p>
+                        </div>
+                        <div class="head__information-phone">
+                            <p>+7 (495) 790-82-78 </p>
+                            <svg class="svg__phone" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2178 13.9244C11.4978 16.44 13.56 18.5022 16.0756 19.7822L18.0311 17.8267C18.28 17.5778 18.6267 17.5067 18.9378 17.6044C19.9333 17.9333 21 18.1111 22.1111 18.1111C22.3469 18.1111 22.573 18.2048 22.7397 18.3715C22.9064 18.5382 23 18.7643 23 19V22.1111C23 22.3469 22.9064 22.573 22.7397 22.7397C22.573 22.9064 22.3469 23 22.1111 23C18.1034 23 14.2598 21.4079 11.4259 18.5741C8.59206 15.7402 7 11.8966 7 7.88889C7 7.65314 7.09365 7.42705 7.26035 7.26035C7.42705 7.09365 7.65314 7 7.88889 7H11C11.2357 7 11.4618 7.09365 11.6285 7.26035C11.7952 7.42705 11.8889 7.65314 11.8889 7.88889C11.8889 9 12.0667 10.0667 12.3956 11.0622C12.4933 11.3733 12.4222 11.72 12.1733 11.9689L10.2178 13.9244Z" fill="#DBC67F"/>
+                                <circle cx="15" cy="15" r="14.5" stroke="#DBC67F"/>
+                                </svg>
+                                
+                        </div>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <section class="section__face" id="section__face">
+        <div class="swiper sample-slider">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide ">
+                   
+                        <div class=" about_room_slider-left__text slider__left__text">
+                           <div class="about_room-slt-elems slider__left-elements">
+                                <p class="slider__text-name">ЖК Дом на Саввинской набережной
+                                </p>
+                                    <p class="slider__text-price">Саввинская набережная, 9</p>
+                                 
+                                    <div class="about__room-slte-choose slider__text-choose">
+                                        <div class="text__choose-object">
+                                            <img class="img_object" src="./assets/img/page_AboutRoom/svg/building.svg" alt="rooms" />
+                                            <p class="text_object">Тип объекта: Квартира</p>
+                                        </div>
+                                        <div class="text__choose-object">
+                                            <img class="img_object" src="./assets/img/page_AboutRoom/svg/room.png" alt="rooms" />
+                                            <p class="text_object">Площадь: 160 м²</p>
+                                        </div>
+                                        <div class="text__choose-object">
+                                            <img class="img_object" src="./assets/img/page_AboutRoom/svg/bed.png" alt="rooms" />
+                                            <p class="text_object">Количество спален: 2</p>
+                                        </div>
+                                    </div> 
+                                    <p  class="mt-3rem rentRoom_night">
+                                        от <span>2000р/</span>ночь
+                                    </p>
+                                    <button class="mt-2rem slider__btn-buy rentRoomFontBtn card-btn" onclick="showModal()">Получить консультацию</button>
+                           </div>
+
+                        </div>
+                        <div class="slider__right-img">
+                           <div class="slider__contacts">
+                            <img class="slider__contact" src="./assets/img/whatsapp.svg.png" alt="whatsapp" />
+                            <img class="slider__contact" src="./assets/img/telegram.svg.png" alt="telegram" />
+                            <img class="slider__contact" src="./assets/img/youtube.svg.png" alt="youtube" />
+                           </div>
+                           
+                        </div>
+                       
+               
+                </div>
+                
+            </div>
+             
+            <div class="swiper-pagination"></div>
+
+        </div>
+        <div class="under__slider">
+            <img class=" under__slider-right" src="./assets/img/Corners/angle_section4.png" />
+            <img class="under__slider-left" src="./assets/img/Corners/angle_section4_left.png" />
+            
+        </div>
+    </section>
+    <section class="back__veryBrightMarble catalog">
+        <div class="base_mt offers__text">
+            <div class="our__serviec-intro offers__align-center">
+                <img class="servieces__intro-leftImg" src="./assets/img/our_services.png" alt="our__services" />
+
+                <h1 class="our__services-name offers__name">Ключевые характеристики
+                </h1>
+                <img class= "servieces__intro-rightImg" src="./assets/img/our_services.png" alt="our__services" /><br>
+            </div>
+        </div>
+        <div class="container-catalog">
+                <div class="keyCharacter_rows">
+                    <div class="keyCharacter_column">
+                    <h3>Кровати</h3>
+                    <ul>
+                        <li> <img src="./assets/img/page_AboutRoom/svg/ul1lii1.svg" alt="icon" /><p>Две односпальные или большая двуспальная кровать</p></li>
+                    </ul>
+                    <h3>Мебель</h3>
+                    <ul>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul2li1.svg" alt="icon" /><p>Барная стойка</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul2li2.svg" alt="icon" /><p>Зеркало</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul2li3.svg" alt="icon" /><p>Кресло</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul2li4.svg" alt="icon" /><p>Мебельный гарнитур</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul2li5.svg" alt="icon" /><p>Раскладное кресло</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul2li6.svg" alt="icon" /><p>Стул</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul2li7.svg" alt="icon" /><p>Шкаф для одежды</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul2li8.svg" alt="icon" /><p>Шкаф-купе</p></li>
+                    </ul>
+                    <h3>Электроника</h3>
+                    <ul>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul3li1.svg" alt="icon" /><p>Кофемашина</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul3li2.svg" alt="icon" /><p>Микроволновая печь</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul3li3.svg" alt="icon" /><p>Плита для приготовления пищи</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul3li4.svg" alt="icon" /><p>Светильник</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul3li4.svg" alt="icon" /><p>Утюг</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul3li5.svg" alt="icon" /><p>Фен</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul3li6.svg" alt="icon" /><p>Холодильник</p></li>
+                        <li><img src="./assets/img/page_AboutRoom/svg/ul3li7.svg" alt="icon" /><p>Электронные замки</p></li>
+                    </ul>
+                    </div>
+                    <div class="keyCharacter_column">
+                        <h3>Видео/аудио</h3>
+                        <ul>
+                            <li> <img src="./assets/img/page_AboutRoom/svg/col2/ul1li1.svg" alt="icon" /><p>Кабельное телевидение</p></li>
+                            <li> <img src="./assets/img/page_AboutRoom/svg/col2/ul1li2.svg" alt="icon" /><p>Цифровое ТВ</p></li>
+                            <li> <img src="./assets/img/page_AboutRoom/svg/col2/ul1li3.svg" alt="icon" /><p>Телевизор с плоским экраном</p></li>
+                        </ul>
+                        <h3>Интернет/телефония</h3>
+                        <ul>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col2/ul2li1.svg" alt="icon" /><p>Wi-FI</p></li>
+                        </ul>
+                        <h3>Ванная комната</h3>
+                        <ul>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col2/ul3li1.svg" alt="icon" /><p>Ванна</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col2/ul3li2.svg" alt="icon" /><p>Ванная комната</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col2/ul3li3.svg" alt="icon" /><p>Водонагреватель</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col2/ul3li4.svg" alt="icon" /><p>Косметические средства</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col2/ul3li4.svg" alt="icon" /><p>Туалет</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col2/ul3li5.svg" alt="icon" /><p>Туалетные средства</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col2/ul3li6.svg" alt="icon" /><p>Унитаз</p></li>
+                        </ul>
+                    </div>
+                    <div class="keyCharacter_column">
+                        <h3>Внешняя территория и вид из окна</h3>
+                        <ul>
+                            <li> <img src="./assets/img/page_AboutRoom/svg/col3/ul1li1.svg" alt="icon" /><p>Вид во двор</p></li>
+                        </ul>
+                        <h3>Прочее</h3>
+                        <ul>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li1.svg" alt="icon" /><p>Гладильная доска</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li2.svg" alt="icon" /><p>Кухонная посуда</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li3.svg" alt="icon" /><p>Кухонный уголок</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li4.svg" alt="icon" /><p>Ламинат</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li4.svg" alt="icon" /><p>Мини-кухня</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li5.svg" alt="icon" /><p>Набор посуды</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li6.svg" alt="icon" /><p>Номер для некурящих</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li6.svg" alt="icon" /><p>Отопление</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li6.svg" alt="icon" /><p>Стаканы</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li6.svg" alt="icon" /><p>Стиральная машина</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li6.svg" alt="icon" /><p>Столовые приборы</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li6.svg" alt="icon" /><p>Сушилка для белья</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li6.svg" alt="icon" /><p>Чайник</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li6.svg" alt="icon" /><p>Чайный набор</p></li>
+                            <li><img src="./assets/img/page_AboutRoom/svg/col3/ul2li6.svg" alt="icon" /><p>Онлайн-регистрация до заезда</p></li>
+                        </ul>
+                    </div>
+             </div>
+
+        </div>
+        <div class="zi-2 under__services">
+            <img class=" under__slider-right" src="./assets/img/Corners/corner_left_softWhite.png" />
+            <img class="under__slider-left" src="./assets/img/Corners/corner_right_softWhite.png" />
+            
+        </div>
+     </section>
+    <section class="mb-0 best__offers ">
+        <div class="base_mt offers__text">
+            <div class="our__serviec-intro offers__align-center">
+                <img class="servieces__intro-leftImg" src="./assets/img/our_services.png" alt="our__services" />
+
+                <h1 class="our__services-name offers__name">О квартире
+                </h1>
+                <img class= "servieces__intro-rightImg" src="./assets/img/our_services.png" alt="our__services" /><br>
+            </div>
+        </div>
+        <div class="about__room">
+            <div class="about_room-content">
+                <h3>Квартира в аренду, 3-комнатная, Дом на Саввинской набережной, Саввинская набережная, 9, ID 44940</h3>
+                <p>Уютная 3-х комнатная квартира общей площадью 160 кв. м, расположенная в новом доме на Саввинской набережной. Современный авторский ремонт из натуральных материалов. Полная комплектация мебелью и техникой. Установлены кондиционеры. Функциональная планировка: просторная гостиная, кухня, 2 спальни, 2 ванные комнаты, 2 гардеробные, постирочная комната. Окна выходят на 2 стороны, высота потолков 3,2 м. Огороженная охраняемая территория, установлен домофон. Подземный паркинг. В ближайшем доступе: кафе, магазины, рестораны, бары, салоны красоты, музеи.</p>
+            </div>
+            <div class="about_room-map">
+                <h3>На карте:</h3>
+                <div id="mymap" class="page_contacts_info-map"></div>
+                <!--<img src="./assets/img/page_AboutRoom/map.png" alt="map" />-->
+            </div>
+        </div>
+        
+        <div class="under__slider">
+            <img class="under__slider-left-corner" src="./assets/img/Corners/corner_left.psd.png" />
+            <img class=" under__slider-right" src="./assets/img/Corners/corner_right.psd.png" />
+        </div> 
+    </section>
+    <section class="call_us">
+        <div class="monumental__group-content call_us-content">
+            <div class="monumental__left-content">
+                <div class="monumental__left-text call_us-text">
+                    <h1>Реализуйте свою недвижимость с <span>monumental</span>group
+                    </h1>
+                    <p>Если Вы решили продать или купить элитную недвижимость в Москве, Подмосковье или в любой точке мира, сдать квартиру или дом в аренду, выгодно инвестировать средства или стать нашим клиентом области консалтинга и оценки объектов, команда Intermark Real Estate станет Вашим незаменимым партнером.</p>
+                    <form class="from_call_us">
+                        <input class="call_input input_name" type="text" name="name" placeholder="Ваше имя" required/>
+                        <input class="call_input input_phone" type="tel" name="phone" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _" pattern="+7[0-9]{3}[0-9]{3}[0-9]{4}" required/>
+                        <button class="slider__btn-buy call_us-btn mt-2-31rem">Сдать в аренду</button>
+                        <button class="slider__btn-buy call_us-btn_2 mt-2-31rem">Продать</button>
+                    </form>
+                </div>
+            </div>
+            <div class="monumental__right-content">
+                <img src="./assets/img/background_section6-right.png" alt="background">
+            </div>
+        </div>
+        <div class="under__slider choose_under">
+            <img class="under__slider-left" src="./assets/img/Corners/black_angle_under_page_left.png" />
+            <img class=" under__slider-right" src="./assets/img/Corners/black_angle_under_page.png" />
+        </div>  
+    </section>
+
+    <footer class="footer">
+        <div class="head__logo footer-logo"></div>
+        <div class="footer-content">
+            <div class="footer-content-first">
+                <h1>Главная</h1>
+                <ul class="menu__ul">
+                    <li>
+                        <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Услуги
+                      </li>
+                      <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Собственникам
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />О компании
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Блог
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Контакты
+                        </li>
+                </ul>
+            </div>
+            <div class="footer-content-first">
+                <h1>Аренда</h1>
+                <ul class="menu__ul">
+                    <li>
+                        <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Квартиры
+                      </li>
+                      <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Дома
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Коммерческая<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; недвижимость
+                        </li>
+                </ul>
+            </div>
+            <div class="footer-content-first">
+                <h1>Продажа</h1>
+                <ul class="menu__ul">
+                    <li>
+                        <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Квартиры
+                      </li>
+                      <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Дома
+                        </li>
+                        <li>
+                          <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Коммерческая<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; недвижимость
+                        </li>
+                        <li>
+                            <a><img class ="links__hover__img-left" src="./assets/img/choose_info.png" alt="links" />Земельные участки
+                        </li>
+                </ul>
+            </div>
+            <div class="footer-content-first">
+                <h1 class="footer__name">Контактные данные</h1>
+                <p class="footer_phone">+7 800 123-00-00</p>
+                <div class="footer__contacts">
+                    <img class="slider__contact" src="./assets/img/whatsapp.svg.png" alt="whatsapp" />
+                        <img class="slider__contact" src="./assets/img/telegram.svg.png" alt="telegram" />
+                        <img class="slider__contact" src="./assets/img/youtube.svg.png" alt="youtube" />
+                </div>
+                <div class="head__information-address footer__address">
+                    <svg class="svg__address" xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" fill="none">
+                        <path d="M1.47794 5.86607C2.5545 3.022 5.30049 1 8.52039 1C12.677 1 16.0465 4.37056 16.0465 8.52679C16.0465 11.8636 11.1949 18.2478 9.28213 20.6348C9.19053 20.7488 9.07453 20.8408 8.94267 20.904C8.8108 20.9672 8.66644 21 8.52022 21C8.37399 21 8.22963 20.9672 8.09777 20.904C7.96591 20.8408 7.8499 20.7488 7.7583 20.6348C5.88428 18.2964 1.18976 12.1215 1 8.73374" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M5.06934 8.52412C5.07538 7.61499 5.44096 6.74519 6.08623 6.10474" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M7.25733 5.33782C7.88375 5.09165 8.56846 5.03397 9.22723 5.17187C9.88601 5.30976 10.4901 5.63722 10.9652 6.11396C11.4403 6.5907 11.7657 7.19592 11.9013 7.85517C12.0369 8.51441 11.9768 9.19892 11.7285 9.82448C11.4802 10.45 11.0544 10.9894 10.5035 11.3761C9.95269 11.7628 9.30081 11.9801 8.62809 12.0012C7.95537 12.0223 7.29116 11.8462 6.71718 11.4948C6.1432 11.1433 5.68448 10.6317 5.39746 10.0229" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                    <p>Агентство элитной недвижимости                                 Москва, Мира 23</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <a>Соглашение об использовании персональных данных</a>
+            <a>© 2023 Все права защищены</a>
+        </div>
+    </footer>
+    <div class="block_modal" id="modal">
+        <div class="border" id="modal_border">
+            <div class="modal_X" id="modal_close" onclick="showModal()"> </div>
+            <div class="modal-content">
+                <div class="modal_name">
+                    <h1>продать/сдать</h1>
+                    <h1>недвижимость</h1>
+                    <img class="services_svg" src="./assets/img/svg_ourServices.png" alt="vector" />
+                </div>
+                <p>Оставьте заявку и наши менеджеры свяжутся с вами в ближайшее время</p>
+                <form class="modal_form" name="form_call">
+                    <input class="modal_form_input_withImg " type="text" name="name" placeholder="Ваше имя" required/>
+                    <input class="ml-auto call_input input_phone" type="tel" name="phone" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _" pattern="+7[0-9]{3}[0-9]{3}[0-9]{4}" required/>
+                    <div class="modal_wrapper_icon_input">
+                        <div class="modal_wrapper__select-form_typeObject">
+                            <select class="modal_typeObject" id="modal_typeObject"> 
+                                <option>Тип услуги</option> 
+                                <option>Дом</option> 
+                                <option>Квартира</option> 
+                                <option>Подвал</option> 
+                                <option>Клетка</option> 
+                            </select>
+                        </div>
+                     </div>
+                    <div class="modal_wrapper_icon_input">
+                        <div class="modal_wrapper__select-form_typeObject">
+                            <select class="modal_typeObject" id="modal_typeObject"> 
+                                <option>Тип объекта</option> 
+                                <option>Дом</option> 
+                                <option>Квартира</option> 
+                                <option>Подвал</option> 
+                                <option>Клетка</option> 
+                            </select>
+                        </div>
+                     </div>
+                     <input class="modal_input" type="text" name="name" placeholder="Введите адрес" required/>
+                     <div class="modal_form_blocks_inputs">
+                        <input class="modal_input" type="text" name="name" placeholder="Площадь" required/>
+                        <input class="modal_input" type="text" name="name" placeholder="Кол. комнат" required/>
+                     </div>
+                     <div class="modal_form_personalInfo">
+                        <input type="checkbox" class="checkbox-round" required/>
+                        <p>Принимаю <u>условия обработки</u> персональных данных</p>
+                     </div>
+                    <div class="modal_form_block_btn">
+                        <button class="modal_form_btn">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal_X" id="modal_close_bottom" onclick="showModal()"> </div>
+        </div>
+        
+    </div>
+
+    <div class="burger">
+        <span></span>
+    </div>
+    <div class="menu">
+        <div class="head__logo"></div>
+        <nav class="head__menu">
+            <ul class="menu__ul">
+                <li>
+                  <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Услуги
+                    <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                  
+                </li>
+                <li>
+                    <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Собственникам
+                      <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                    
+                  </li>
+                  <li>
+                    <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />О компании
+                      <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                    
+                  </li>
+                  <li>
+                    <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Блог
+                      <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                    
+                  </li>
+                  <li>
+                    <a><img class ="links__hover__img-left" src="./assets/img/links.png" alt="links" />Контакты
+                      <img class ="links__hover__img-right" src="./assets/img/links.png" alt="links" /></a>
+                    
+                  </li>
+    
+            </ul>
+        </nav>
+        <div class="head__information">
+            <div class="head__information-address">
+                <svg class="svg__address" xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" fill="none">
+                    <path d="M1.47794 5.86607C2.5545 3.022 5.30049 1 8.52039 1C12.677 1 16.0465 4.37056 16.0465 8.52679C16.0465 11.8636 11.1949 18.2478 9.28213 20.6348C9.19053 20.7488 9.07453 20.8408 8.94267 20.904C8.8108 20.9672 8.66644 21 8.52022 21C8.37399 21 8.22963 20.9672 8.09777 20.904C7.96591 20.8408 7.8499 20.7488 7.7583 20.6348C5.88428 18.2964 1.18976 12.1215 1 8.73374" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M5.06934 8.52412C5.07538 7.61499 5.44096 6.74519 6.08623 6.10474" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M7.25733 5.33782C7.88375 5.09165 8.56846 5.03397 9.22723 5.17187C9.88601 5.30976 10.4901 5.63722 10.9652 6.11396C11.4403 6.5907 11.7657 7.19592 11.9013 7.85517C12.0369 8.51441 11.9768 9.19892 11.7285 9.82448C11.4802 10.45 11.0544 10.9894 10.5035 11.3761C9.95269 11.7628 9.30081 11.9801 8.62809 12.0012C7.95537 12.0223 7.29116 11.8462 6.71718 11.4948C6.1432 11.1433 5.68448 10.6317 5.39746 10.0229" stroke="#DBC67F" stroke-miterlimit="10" stroke-linecap="round"/>
+                </svg>
+                <p>Агентство элитной недвижимости                                 Москва, Мира 23</p>
+            </div>
+            <div class="head__information-phone">
+                <p>+7 (495) 790-82-78 </p>
+                <svg class="svg__phone" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2178 13.9244C11.4978 16.44 13.56 18.5022 16.0756 19.7822L18.0311 17.8267C18.28 17.5778 18.6267 17.5067 18.9378 17.6044C19.9333 17.9333 21 18.1111 22.1111 18.1111C22.3469 18.1111 22.573 18.2048 22.7397 18.3715C22.9064 18.5382 23 18.7643 23 19V22.1111C23 22.3469 22.9064 22.573 22.7397 22.7397C22.573 22.9064 22.3469 23 22.1111 23C18.1034 23 14.2598 21.4079 11.4259 18.5741C8.59206 15.7402 7 11.8966 7 7.88889C7 7.65314 7.09365 7.42705 7.26035 7.26035C7.42705 7.09365 7.65314 7 7.88889 7H11C11.2357 7 11.4618 7.09365 11.6285 7.26035C11.7952 7.42705 11.8889 7.65314 11.8889 7.88889C11.8889 9 12.0667 10.0667 12.3956 11.0622C12.4933 11.3733 12.4222 11.72 12.1733 11.9689L10.2178 13.9244Z" fill="#DBC67F"/>
+                    <circle cx="15" cy="15" r="14.5" stroke="#DBC67F"/>
+                </svg>
+                    
+        </div>
+        </div>
+       
+    </div>
+</body>
+</html>
