@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
+	<title>image</title>
+	<defs>
+		<image  width="50" height="50" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAAXNSR0IB2cksfwAAAMxQTFRFAAAArwgQrwUQsgcQsQcQsQcQsgYQsgcQsgcQsgUQrxAQswYQsgcQrwQQtxcfzmRp3ZOW57K09eDh+u/w////7MHDylVauyYusgYQsgYQ1HN4z2RpswcQ2YOHxUVLsgUQswcQ3pKW3ZKW8NHSsgcQsgcQxUVMsgcQ2IOHsQcQ03N4sQYQtQgQylRasQYQ++/wswYQylRbsggQtxYfvCYusQgQz2RqrwAQ9uDh2YOIrwgQ3ZOXsgkQ8dHSrwgQ2IOIsQYQ1HN557G0zmRqffJ7iAAAAER0Uk5TACBgj8/f7/+/YBB/30D/////8AAA////n6///2///4/P////cO//r/+Q/4Af/88Az/9g//+A/xDw/0D/cP9g/6D////TG0C2AAAB1ElEQVR4nJ2Wa1viMBCFA9ieojWWMhWQxVVUdqu7oLYi6331//8nJ30ALekl4XyEvM/MyUmTEUJTo9nacVwAjtdqN/T/N7W75yAnv1VN7Xu8SB4EnbBLRGEUHPb4h3451Bjw+qOIcoqGFdAPF3LUJU3hiNtrFxEt4DjUgQziSj912yeQp8WA0lhiZ1cjemflBBfqbTJMlDT1ncn7qCMy5pufJmQtQXQmcb7Ow0eF8y+NcbHKp4+hCUE0wa9lEcCgLaVQYn9Z5LcZQTSCZ1eEqCuhwolNnShd4ooRH1H90pUi+KqvnjlBJPGHY/xrgwzRZitjGyRALDwbK0QdTIVjvsVKIfsHbAjq4sIWIWAbxMXMFtnC/jU6NkjEZ3mLKJs4sEFucMvHMrFBUvDn71gffnGHI3NkzlaEuEdinMwCyK4lz/y6+Id+dsM8IFnYFRFigIkZMl8W4c/fNYvzEf76AXxC8mzQluQY14qR1tpZpNkGrzWtZZjIPUnivo55TrXHkpmkYg8e9ec184N5SaHFBHkfK73w9PJaAM1eJdzzIoLzeePZY745kPyXwKBiilFQehNE6j6Yhe/BB6+H91AKZFC8MVw5d7ptnXqJPcW5zjRuFnT0CXCgnXEvz+59AAAAAElFTkSuQmCC"/>
+		<image  width="4" height="42" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAqBAMAAABmeecLAAAAAXNSR0IB2cksfwAAABhQTFRFtAgQsgYQsgcQsgcQsgcQrwgQsQcQsggQG79XDwAAAAh0Uk5TX+/f/+9g32Bq3C6FAAAAGElEQVR4nGNgVGBQNmEwNqY3EjZiCBMHAPWwEE/+RvxgAAAAAElFTkSuQmCC"/>
+		<image  width="42" height="4" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAEBAMAAAAKS7AuAAAAAXNSR0IB2cksfwAAABhQTFRFtAgQsgYQsgcQsgcQsgcQrwgQsQcQsggQG79XDwAAAAh0Uk5TX+//3+9g32CssQS3AAAAHUlEQVR4nGNgVMIEBgxGWERVGISwiCozhGERFQcA6cQLQnX7g2cAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<use id="Слой 1" href="#img2" x="23" y="4"/>
+	<use id="Слой 2" href="#img3" x="4" y="23"/>
+</svg>
