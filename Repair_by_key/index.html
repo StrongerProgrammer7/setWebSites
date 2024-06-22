@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    <title>Ремонт</title>
+</head>
+<body>
+    <header id="Main">
+        <div class="container">
+            <div class="block__display-flex header__inner">
+                <div class="header__logo"> 
+                    <p>  </p>
+                </div> 
+                <nav class="block__display-flex header__nav-menu" id="navigation">
+                    <ul>
+                        <li class="header__nav-link">
+                            <span class="X"></span>
+                            <a class="a1" href="#Menu" data-scroll="#work"> Меню </a>
+                            <ul class="submenu">
+                                <li><a href="#">услуги</a></li>
+                                <li><a href="#">статьи</a></li>
+                                <li><a href="#">вакансии</a></li>
+                                <li><a href="#">франшиза</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-link" ><span class="X"></span><a  href="#portfolio" data-scroll="#about" > Портфолио </a></li>
+                        <li class="header__nav-link"><span class="X"></span><a  href="#backLink" data-scroll="#reviews"> отзывы</a></li>
+                        <li class="header__nav-link"><span class="X"></span><a  href="#schema" data-scroll="#reviews"> Схема работы</a></li>
+                        <li class="header__nav-link"><span class="X"></span> <a href="#contacts" data-scroll="#reviews"> Контакты</a>
+                            <ul class="submenu">
+                                <li><a href="#">услуги</a></li>
+                                <li><a href="#">статьи</a></li>
+                                <li><a href="#">вакансии</a></li>
+                                <li><a href="#">франшиза</a></li>
+                            </ul></li>
+                        <li class="header__nav-link"><span class="X"></span> <a href="#garant" data-scroll="#reviews"> Гарантия</a></li>
+                    </ul>
+                </nav>
+                <div class="btn" id="btn_call">
+                    <button class="btn_call btn_shadow btn_call_anim"  onclick="openPopup()">Обратный звонок</button>
+                </div>
+            </div> 
+        </div>
+    </header>
+
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner" id="intro__inner">
+                <div class="intro__left">
+                    <div class="intro__left-content">
+                        <h1 class="intro__left-name">Ремонт под ключ от 2900 руб/м<sup>2</sup></h1>
+                        <p class="intro__left-text">При заказе ремонта делаем <span>дизайн-проект </span>в подарок</p>
+                        <div class="intro__left-contentWithImg">
+                            <div class="intro__left__contentWithImg-block">
+                                <img class="img_object" src="./img/1.png" alt="truck" />
+                                <p class="text_object">Бесплатный выезд в день обращения</p>
+                            </div>
+                            <div class="intro__left__contentWithImg-block">
+                                <img class="img_object" src="./img/3.png" alt="truck" />
+                                <p class="text_object">Гарантия на работу до 5 лет</p>
+                            </div>
+                            <div class="intro__left__contentWithImg-block">
+                                <img class="img_object" src="./img/2.png" alt="truck" />
+                                <p class="text_object">Жесткое соблюдение сроков</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn_off">
+                        <button class="btn_call btn_shadow" onclick="openPopup()">Обратный звонок</button>
+                    </div>
+                    <div class="scroll">
+                        <div class="scroll_anim"><img src="./img/scroll.png" alt="scroll" /></div>
+                        <p class="scroll__text">SCROLL</p>
+                    </div>
+                </div>
+                <div class="intro__right">
+                    <div class="intro__right-content">
+                        <img class="intro__right-imgRoom" src="./img/back2.jpg" alt="room" id="imgRoom"/>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="popup" id="popup">
+        <div class="modal__container">
+            <h3 class="modal_name">Рассчитайте стоимость ремонта</h3>
+        <div class="modal__block">
+            <div class="modal_nameBlock">
+                <p> Площадь квартиры: </p>
+                <p class="sizeRoom" style="text-transform: lowercase;">68м<sup>2</sup></p>
+            </div>
+            <div class="progress-bar">
+                <div class="html">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="modal__block">
+            <div class="modal_nameBlock">
+                <p> Тип жилья: </p>
+            </div>
+            <div class="name__buildings">
+                <div class="typeBuilding">
+                    <img class="modal__img" src="./img/modal.png" alt="circle"/>
+                   <p class="modal__text">Вторичное жилье</p>
+                 </div>
+                <div class="typeBuilding">
+                    <img class="modal__img" src="./img/modal.png" alt="circle"/>
+                <p class="modal__text">Новостройки</p>
+                </div>
+                <div class="typeBuilding">
+                    <img class="modal__img" src="./img/modal.png" alt="circle"/>
+                   <p class="modal__text">Офис</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal__block">
+            <div class="modal_nameBlock">
+                <p> Кол-во комнат: </p>
+            </div>
+            <div class="name__buildings">
+                <div class="typeBuilding">
+                    <img class="modal__img" src="./img/modal.png" alt="circle"/>
+                   <p class="modal__text">1</p>
+                 </div>
+                <div class="typeBuilding">
+                    <img class="modal__img" src="./img/modal.png" alt="circle"/>
+                <p class="modal__text">2</p>
+                </div>
+                <div class="typeBuilding">
+                    <img class="modal__img" src="./img/modal.png" alt="circle"/>
+                   <p class="modal__text">3+</p>
+                </div>
+                <div class="typeBuilding">
+                    <img class="modal__img" src="./img/modal.png" alt="circle"/>
+                   <p class="modal__text">Студия</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal_btn">
+            <button class="btn_call" onclick="closePopup()">Отправить</button>
+        </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class=" container clearfix">
+            <div class="footer_content">
+                <section>
+                    <h2>Name company</h2>
+                    <div class="footer-block-article">
+                        <p>Email: ******@gmail.com</p>
+                        <p>Phone: +777777777</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Backend</h2>
+                    <div class="footer-block-article">
+                        <p>Link: <a>PHP site</a></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Download</h2>
+                    <div class="footer-block-article">
+                        <a href="">Download archive of web site</a>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
