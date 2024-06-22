@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/js/swiper-10.3.1/swiper-bundle.min.css">
+    <script src="./assets/js/swiper-10.3.1/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=47d33f3c-80e3-4b7d-99ea-80609d4de6af" type="text/javascript"></script>
+
+    <script src="./assets/js/index.js" defer></script>
+    <title>Отзывы</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           <div class="inner_header">
+                <div class="wrapper_header">  
+                                
+                        <nav class="menu__ul">
+                                <li class="entrySubMenu" id="serviceMenu">
+                                <a href="./taxs.html">Тарифы 
+                                    <div class="wrappper_menu_ul_li_a-img">
+                                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                    </div>
+                                </a> </li>
+                                <li><a href="./our_park.html">Автопарк
+
+                                    <div class="wrappper_menu_ul_li_a-img">
+                                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                    </div>
+                                </a></li>
+                                <li><a href="./reviews.html">Отзывы
+                                    <div class="wrappper_menu_ul_li_a-img">
+                                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                    </div>
+                                </a></li>
+                                <li><a href="./about_company.html">О нас
+                                    <div class="wrappper_menu_ul_li_a-img">
+                                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                    </div>
+                                </a></li>
+                                <li><a href="./our_contacts.html">Контакты
+                                    <div class="wrappper_menu_ul_li_a-img">
+                                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                    </div>
+                                </a></li>
+                                <li><a href="./partner.html">Партнерам
+                                    <div class="wrappper_menu_ul_li_a-img">
+                                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                    </div>
+                                </a></li>
+                        </nav>
+                        <div class="header__logo">
+                           <a href="./index.html"> <img src="./assets/imgs/logo.png" alt="logo" /></a>
+                        </div>
+                        <div class="header__info">
+                            <div class="calc" onclick="showModalCalc();">
+                                <div class="wrapper_iconCalc">
+                                    <img src="./assets/imgs/calc.svg" alt="icon" />
+                                </div>
+                                <a class="" >Рассчитать</a>
+                                <div class="backgroundTransition"></div>
+                            </div>
+                            <div class="phone">
+                                <div class="wrapper_iconPhone">
+                                    <img src="./assets/imgs/phone.svg" alt="icon" />
+                                    <img src="./assets/imgs/phoneGold.svg" alt="icon" />
+                                </div>
+                                <a href="tel:+7 933 111 12 21">+7 933 111 12 21 </a>
+                            </div>
+                            <button class="btn__order"  onclick="showModal();">Позвонить</button>
+                            <div class="wrapper_phone" onclick="showModal();">
+                                <div class="btn__phone"><img src="./assets/imgs/phone_forSmartphone.svg" alt="icon" /></div>
+                                <p>Позвонить</p>
+                            </div>
+                        
+                        </div> 
+                </div>
+                <div class="prev_page">
+                    <img src="./assets/imgs/sliders/arrow_left.svg" alt="arrow" />
+                </div>    
+           </div>
+          
+        </div>
+    </header>
+    <section class="block_face h49rem">
+        <div class="wrapperContentFace">
+            <img src="./assets/imgs/Main/background_1.png" alt="1" />
+            <h1>Black taxi</h1>
+            <div class="wrapperTitle">
+                <p>Отзывы</p>
+            </div>
+        </div>
+      
+
+    </section>
+    <section class="section_tax_cards mt_-27rem">
+        <div class="container">
+            <div class="set_reviews">
+                <div class="slide__review">
+                    <div class="slide__review-wrapperImg" >
+                      
+                        <img src="/assets/imgs/sliders/answer.png" alt="img" />
+                    </div>
+                    <div class="slide__review-content">
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nulla aliquam esse enim adipisci atque alias molestias. Eum, quasi veritatis deserunt quam quos dolore qui, suscipit ducimus laboriosam assumenda ab?</p>
+                    </div>
+                    <img class="quote_lft_down" src="./assets/imgs/sliders/quote_lft_down.svg" alt="icon" />
+                    <img class="quote_right_up" src="./assets/imgs/sliders/quote_right_up.svg" alt="icon" />
+                </div>
+                <div class="slide__review">
+                    <div class="slide__review-wrapperImg" >
+                      
+                        <img src="/assets/imgs/sliders/answer.png" alt="img" />
+                    </div>
+                    <div class="slide__review-content">
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nulla aliquam esse enim adipisci atque alias molestias. Eum, quasi veritatis deserunt quam quos dolore qui, suscipit ducimus laboriosam assumenda ab?</p>
+                    </div>
+                    <img class="quote_lft_down" src="./assets/imgs/sliders/quote_lft_down.svg" alt="icon" />
+                    <img class="quote_right_up" src="./assets/imgs/sliders/quote_right_up.svg" alt="icon" />
+                </div>
+                <div class="slide__review">
+                    <div class="slide__review-wrapperImg" >
+                      
+                        <img src="/assets/imgs/sliders/answer.png" alt="img" />
+                    </div>
+                    <div class="slide__review-content">
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nulla aliquam esse enim adipisci atque alias molestias. Eum, quasi veritatis deserunt quam quos dolore qui, suscipit ducimus laboriosam assumenda ab?</p>
+                    </div>
+                    <img class="quote_lft_down" src="./assets/imgs/sliders/quote_lft_down.svg" alt="icon" />
+                    <img class="quote_right_up" src="./assets/imgs/sliders/quote_right_up.svg" alt="icon" />
+                </div>
+                <div class="slide__review">
+                    <div class="slide__review-wrapperImg" >
+                      
+                        <img src="/assets/imgs/sliders/answer.png" alt="img" />
+                    </div>
+                    <div class="slide__review-content">
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nulla aliquam esse enim adipisci atque alias molestias. Eum, quasi veritatis deserunt quam quos dolore qui, suscipit ducimus laboriosam assumenda ab?</p>
+                    </div>
+                    <img class="quote_lft_down" src="./assets/imgs/sliders/quote_lft_down.svg" alt="icon" />
+                    <img class="quote_right_up" src="./assets/imgs/sliders/quote_right_up.svg" alt="icon" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="write_review">
+        <div class="container">
+            <div class="tax_title">
+                <h2>Оставить отзыв
+                    <img src="./assets/imgs/underLineTItleYellow.png" alt="icon" />
+                </h2>
+            </div>
+           <div class="write_review_wrapperForm">
+                <div class="write_review_warnings">
+                    <p>Ваш адрес электронной почты не будет опубликован.</p>
+                    <p> Обязательные поля отмечены <span>*</span></p>
+                </div>
+                <form class="write_review_form">
+                    <textarea rows="15" cols="33"></textarea>
+                    <div class="write_review_form-inputs">
+                        <fieldset class="textfield textfield--light">
+                            <input id="some-id" class="textfield__input" required>
+                            <label for="some-id" class="textfield__label textfield__label--required">Ваше имя</label>
+                        </fieldset>
+                        <fieldset class="textfield textfield--light">
+                            <input id="some-id" class="textfield__input" required>
+                            <label for="some-id" class="textfield__label textfield__label--required">E-mail</label>
+                        </fieldset>
+                    </div>
+                    <button class="btn__order btn__review">Оставить</button>
+                </form>
+           </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="upAngle">
+            <img src="./assets/imgs/angles/down.svg" alt="img" />
+        </div>
+        <div class="footer__wrapperCar">
+            <img src="./assets/imgs/footerCar.png" alt="image" />
+        </div>
+       <div class="footer__inner">
+        <div class="container questions">
+            <div class="footer__content">
+                <h1>У вас остались вопросы?</h1>
+                <p>Оставьте контактные данные и наш менеджер свяжется с вами в ближайшее время</p>
+                <form method="POST" class="footer__form">
+                    <div class="form__content">
+                        <input class="calc_map_form_input input_name" type="text" name="name" placeholder="Ваше имя" required>
+                        <input class="calc_map_form_input input_phone" type="text" name="phone" placeholder="Ваш телефон" required>
+                        <button class="btn__order">Отправить</button>
+                    </div>
+                    <div class="form__copyright">
+                        <label class="checkbox style-a"> <!-- Вся область checkbox  -->
+                            <input type="checkbox"/> <!-- Cтандартный checkbox скрываем, но он обязателен для определения состояния(отмечен или нет) -->
+                            <div class="checkbox__checkmark"></div> <!-- Область отметки -->
+                            <div class="checkbox__body"></div> <!-- Область описания -->
+                          </label>
+                        <p>Нажимая кнопку вы даете согласие на обработку персональных данных и соглашаетесь с <a>Политикой конфеденциальности</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="blackLineFooter">
+            <svg width="1920" height="6" viewBox="0 0 1920 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1920" height="6" fill="#040100"/>
+            </svg>  
+            <div class="header__logo">
+                <a href="./index.html"><img src="./assets/imgs/logo.png" alt="logo" /></a>
+            </div>
+        </div>
+       
+        <div class="container footer__wrapperInfo">
+            <div class="footer_info">
+               <div>
+                <nav class="menu__ul">
+                    <li> <a href="./taxs.html">Тарифы   
+                        <div class="wrappper_menu_ul_li_a-img">
+                            <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLink.png" alt="line" /> 
+                        </div>
+                         </a>
+                    </li>
+                    <li><a href="./our_park.html">Автопарк<div class="wrappper_menu_ul_li_a-img">
+                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLink.png" alt="line" /> 
+                    </div> </a></li>
+                    <li><a href="./reviews.html">Отзывы<div class="wrappper_menu_ul_li_a-img">
+                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLink.png" alt="line" /> 
+                    </div></a></li>
+                    <li><a href="./about_company.html">О нас<div class="wrappper_menu_ul_li_a-img">
+                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLink.png" alt="line" /> 
+                    </div></a></li>
+                    <li><a href="./our_contacts.html">Контакты<div class="wrappper_menu_ul_li_a-img">
+                        <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLink.png" alt="line" /> 
+                    </div> </a></li>
+                </nav>
+               </div>
+          
+                    <div class="footer_contactInfo">
+                        <div class="phone">
+                            <div class="wrapper_iconPhone">
+                                <img src="./assets/imgs/phoneFooter.svg" alt="icon" />
+                            </div>
+                            <a href="tel:+7 933 111 12 21">+7 933 111 12 21 </a>
+                        </div>
+                        <div class="calc" onclick="showModalCalc();">
+                            <div class="wrapper_iconCalc">
+                                <img src="./assets/imgs/calcFooter.svg" alt="icon" />
+                            </div>
+                            <a class="" >Рассчитать</a>
+                            <div class="backgroundTransition"></div>
+                        </div>
+                        <div class="messagner">
+                            <img src="./assets/imgs/whatsapp.svg" alt="icon" />
+                            <a href="#!">Whatsapp</a>
+                        </div>
+                        <div class="messagner">
+                            <img src="./assets/imgs/telegram.svg" alt="icon" />
+                            <a href="#!">Telegram</a>
+                        </div>
+                    </div>
+              
+            </div>
+            <div class="footer_baseInfo">
+                <p>
+                    г. Москва,  ул. Орджоникидзе, 
+                    д. 1, Дисконт-Центр, 2 этаж, 108
+                    <br/>ИП Загорский Дмитрий Андреевич
+                    <br/>ОГРН 323508100059422
+                    <br/>ИНН 481304275628
+                </p>
+            </div>
+        </div>
+       </div>
+    </footer>
+    
+    <div class="mobile__header">
+        <div class="mobile__header-inner">
+            <div class="container">
+                <div class="mobile__header-content">
+                    <div class="mobile__header-wrapper_info">
+                        <div class="calc" >
+                            <div class="wrapper_iconCalc">
+                                <img src="./assets/imgs/mobile_menu/contacts.png" alt="icon" />
+                            </div>
+                            <a class="" href="./taxs.html" >Тарифы</a>
+                        </div>
+                        <div class="calc" >
+                            <div class="wrapper_iconCalc">
+                                <img src="./assets/imgs/mobile_menu/contacts.png" alt="icon" />
+                            </div>
+                            <a class="" href="./our_contacts.html" >Контакты</a>
+                        </div>
+                    </div>
+                    <div class="burger" id="burger_menu">
+                        <span></span>
+                        <p>Menu</p>
+                    </div>
+                    <div class="mobile__header-wrapper_info">
+                        <div class="calc" onclick="showModalCalc();">
+                            <div class="wrapper_iconCalc">
+                                <img src="./assets/imgs/calc.svg" alt="icon" />
+                            </div>
+                            <a class="" >Рассчитать</a>
+                            <div class="backgroundTransition"></div>
+                        </div>
+                        <div class="wrapper_phone mobile__header-phone" onclick="showModal();">
+                            <div class="btn__phone"><img src="./assets/imgs/phone_forSmartphone.svg" alt="icon" /></div>
+                            <p>Позвонить</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal">
+            <div class="leave_request">
+                <h1>оставить заявку</h1>
+                <p>
+                    Оставьте контактные данные и наш менеджер свяжется с вами в ближайшее время
+                </p>
+                <form class="form_call_us" method="POST">
+                    <input class="calc_map_form_input input_name" type="text" name="name" placeholder="Ваше имя" required>
+                    <input class="calc_map_form_input input_phone" type="text" name="phone" placeholder="Ваш телефон" required>
+                    <textarea class="form_ocTextArea form_call_us-textarea" placeholder="Ваш комментарий"></textarea>
+                    <button class="btn__order btn__order_black">Отправить</button> 
+                </form>
+               
+            </div>
+            <div class="closeModal" id="closeModal"></div>
+    </div>
+
+    <div class="modal_map" id="modal_map">
+            <div class="modal_map__content">
+                <div id="map_modal" class="modal_mapRoute">
+                    
+                </div>
+                <div class="calc_map-content">
+                    <div class="tax_title">
+                        <h2>расчитать стоимость и время в пути
+                            <img src="./assets/imgs/underLineTItleYellow.png" alt="icon" />
+                        </h2>
+                    </div>
+                    <form class="calc_map-form" id="form_map_modal">
+                        <div class="calc_map_form-wrapperSelect">
+                          
+                            <select class="calc_map_form-select" id="select_cities_from">
+                                <option>Выберите город (Откуда)</option> 
+                                <option value="Карачаево-Черкесская Республика_Черкесск">Черкесск</option>
+                                    <option value="Томская область_Томск">Томск</option>
+                            </select>
+                        </div>
+                        <div class="calc_map_form-wrapperSelect">
+                            <select class="calc_map_form-select" id="select_cities_to">
+                                <option>Выберите город (Куда)</option> 
+                                <option value="Москва_Москва">Москва</option>
+                                <option value="Воронежская область_Воронеж">Воронеж</option>
+                            </select>
+                        </div>
+                        <div class="calc_map_form-wrapperSelect">
+                            <select class="calc_map_form-select" id="select_tax">
+                                <option>Тариф</option>
+                                <option value=50>Стандарт</option> 
+                                <option value=100>Комфорт</option> 
+                                <option value=150>Комфорт+</option> 
+                            </select>
+                        </div>
+                        <input class="calc_map_form_input input_name" type="text" name="name" placeholder="Ваше имя" required>
+                        <input class="calc_map_form_input input_phone" type="text" name="phone" placeholder="Ваш телефон"  required>
+                        <input class="calc_map_form_input input_time" type="datetime-local" name="time" placeholder="Дата и время"  required>
+                        <div class="modal__map-info_route" id="info_route_Modal">
+                            <div class="info_route-text" id="distanse">
+                                    <h3>Расстояние:</h3>
+                            </div>
+                            <div class="info_route-text" id="timePath">
+                                <h3>Время пути:</h3>
+    
+                            </div>
+                            <div class="info_route-text" id="pricePath">
+                                <h3>Цена:</h3>
+                            </div>
+                            <div class="info_route-text" >
+                                <h3>Пассажиров:</h3>
+                                <div class="info_route_text-wrapperCount">
+                                    <img src="./assets/imgs/Main/icons/minus.svg" alt="icon"  id="minusPassanger"/>
+                                    <input type="number" name="count_passanger" aria-valuemin="1" aria-valuemax="5" value="1" id="countPassanger" />
+                                    <img src="./assets/imgs/Main/icons/plus.svg" alt="icon"  id="plusPassanger"/>
+                                </div>
+                            </div>
+                            <button class="btn__order "><span>Заказать</span></button>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+    </div>
+    <div class="overlay" id="overlayModal"></div>
+
+    <div class="mobile_menu" id="mobile_menu">
+            <div class="container">
+                <div class="wrapper_header">              
+                    <nav class="menu__ul">
+                            <li class="entrySubMenu" id="serviceMenu">
+                            <a href="./taxs.html">Тарифы 
+                                <div class="wrappper_menu_ul_li_a-img">
+                                    <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                </div>
+                            </a> </li>
+                            <li><a href="./our_park.html">Автопарк
+    
+                                <div class="wrappper_menu_ul_li_a-img">
+                                    <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                </div>
+                            </a></li>
+                            <li><a href="./reviews.html">Отзывы
+                                <div class="wrappper_menu_ul_li_a-img">
+                                    <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                </div>
+                            </a></li>
+                            <li><a href="./about_company.html">О нас
+                                <div class="wrappper_menu_ul_li_a-img">
+                                    <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                </div>
+                            </a></li>
+                            <li><a href="./our_contacts.html">Контакты
+                                <div class="wrappper_menu_ul_li_a-img">
+                                    <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                </div>
+                            </a></li>
+                            <li><a href="./partner.html">Партнерам
+                                <div class="wrappper_menu_ul_li_a-img">
+                                    <img class="underLineHoverLink" src="./assets/imgs/underLineHoverLinkYellow.png" alt="line" /> 
+                                </div>
+                            </a></li>
+                    </nav>
+            
+                    <div class="header__info">
+                        <div class="calc" onclick="showModalCalc();">
+                            <div class="wrapper_iconCalc">
+                                <img src="./assets/imgs/calc.svg" alt="icon" />
+                            </div>
+                            <a class="" >Рассчитать</a>
+                            <div class="backgroundTransition"></div>
+                        </div>
+                        <div class="phone">
+                            <div class="wrapper_iconPhone">
+                                <img src="./assets/imgs/phone.svg" alt="icon" />
+                                <img src="./assets/imgs/phoneGold.svg" alt="icon" />
+                            </div>
+                            <a href="tel:+7 933 111 12 21">+7 933 111 12 21 </a>
+                        </div>
+                        <button class="btn__order"  onclick="showModal();">Позвонить</button>
+                    </div> 
+            </div>
+            </div>
+    </div>
+</body>
+</html>
